@@ -2,8 +2,8 @@
 
 ## Saves Microsoft Stream videos
 
-This project was originally based on [Destreamer](https://github.com/snobu/destreamer)
-Fork powered by @sup3rgiu (https://github.com/sup3rgiu/PoliDown)
+This project was originally based on [Destreamer](https://github.com/snobu/destreamer)  
+Fork powered by @sup3rgiu (https://github.com/sup3rgiu/PoliDown)  
 Further adaptation by @stignarnia
 
 **This program does not work if your school or workplace uses a custom Single Sign On like Shibboleth, in that case give a look at the links above**
