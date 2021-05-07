@@ -26,7 +26,7 @@ If you are on Windows keep reading, otherwise google how to get the prerequisite
 * double click on the `Downstream Launcher.bat` file and enjoy
 
 ### WINDOWS TUTORIAL
-**N.B:** ffmpeg.zeranoe.com closed since Sep 18, 2020. If you are following the video tutorial, download ffmpeg from another source available on [ffmpeg site](https://www.ffmpeg.org/download.html) (nightly build is no more required)
+**N.B:** ffmpeg.zeranoe.com closed since Sep 18, 2020. If you are following the video tutorial, download ffmpeg from another source available on the [ffmpeg website](https://www.ffmpeg.org/download.html) (nightly build is no more required)
 
 **N.B:** This video was made for [PoliDown](https://github.com/sup3rgiu/PoliDown), ignore everything after the succesful execution of the `npm install` command
 
@@ -45,7 +45,7 @@ $ node downstream.js -h
 
 Options:
   --version              Show version number                           [boolean]
-  -v, --videoUrls                                                 [array]
+  -v, --videoUrls                                                      [array]
   -f, --videoUrlsFile    Path to txt file containing the URLs (one URL for each line) [string]
   -u, --username         name.surname@example.com                 [string] [required]
   -p, --password                                                  [string] [required]
