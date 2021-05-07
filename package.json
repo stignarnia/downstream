@@ -1,0 +1,21 @@
+{
+  "name": "downstream",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stignarnia/downstream.git"
+  },
+  "version": "1.0",
+  "description": "Download Microsoft Stream videos.",
+  "main": "downstream.js",
+  "keywords": [],
+  "author": "stignarnia",
+  "license": "MIT",
+  "dependencies": {
+    "m3u8-parser": "^4.4.0",
+    "node-notifier": "^7.0.1",
+    "puppeteer": "^2.1.1",
+    "request": "^2.88.2",
+    "terminal-kit": "^1.26.10",
+    "yargs": "^15.0.3"
+  }
+}
