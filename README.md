@@ -62,12 +62,12 @@ $ node downstream.js -u USERNAME -p PASSWORD
                 "https://web.microsoftstream.com/video/VIDEO-3"
 ```
 
-Download from TXT file (one link each line):
+Download from TXT file (one link per line):
 ```
 $ node downstream.js -u USERNAME -p PASSWORD -f "/my/path/here/links.txt"
 ```
 
-Define default video quality [0-5] (avoid manual prompt for each video):
+Define default video quality [0-5] (to avoid manual prompt for each video):
 ```
 $ node downstream.js -u USERNAME -p PASSWORD -v "https://web.microsoftstream.com/video/VIDEO-1" -q 4
 ```
