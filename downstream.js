@@ -16,7 +16,7 @@ const argv = yargs.options({
     v: { alias: 'videoUrls', type: 'array', demandOption: false },
     f: { alias: 'videoUrlsFile', type: 'string', demandOption: false, describe: 'Path to txt file containing the URLs (one URL for each line)'},
     u: { alias: 'username', type: 'string', demandOption: true, describe: 'Username (e.g. name.surname@st.hunimed.eu)' },
-    p: { alias: 'password', type: 'string', demandOption: true },
+    p: { alias: 'streampassword', type: 'string', demandOption: true },
     o: { alias: 'outputDirectory', type: 'string', default: 'videos' },
     q: { alias: 'quality', type: 'number', demandOption: false, describe: 'Video Quality [0-5]'},
 })
@@ -85,7 +85,7 @@ function parseVideoUrls(videoUrls) {
 
 const notDownloaded = []; // take trace of not downloaded videos
 
-async function downloadVideo(videoUrls, username, domain, password, outputDirectory) {
+async function downloadVideo(videoUrls, username, streampassword, outputDirectory) {
 	
    console.log('Launching headless Chrome to perform the OpenID Connect dance...');
    const browser = await puppeteer.launch({
@@ -101,8 +101,8 @@ async function downloadVideo(videoUrls, username, domain, password, outputDirect
    await page.keyboard.type(username);
    await page.click('input[type="submit"]');
 
-   await sleep(5000);
-   await page.keyboard.type(password); // types the password
+   await sleep(2000);
+   await page.keyboard.type(streampassword); // types the password
    await page.click('input[type="submit"]');
 
    try {
@@ -119,7 +119,7 @@ async function downloadVideo(videoUrls, username, domain, password, outputDirect
      process.exit(401);
    }
    console.log('We are logged in. ');
-   await sleep (3000)
+   await sleep (3000);
    const cookie = await extractCookies(page);
    console.log('Got required authentication cookies.');
    console.log("\nAt this point Chrome's job is done, shutting it down...");
@@ -513,6 +513,6 @@ sanityChecks();
 const videoUrls = parseVideoUrls(argv.videoUrls);
 console.info('Video URLs: %s', videoUrls);
 console.info('Username: %s', argv.username);
-//console.info('Password: %s', argv.password);
+//console.info('Password: %s', argv.streampassword);
 console.info('Output Directory: %s\n', argv.outputDirectory);
-downloadVideo(videoUrls, argv.username, argv.password, argv.outputDirectory);
+downloadVideo(videoUrls, argv.username, argv.streampassword, argv.outputDirectory);
