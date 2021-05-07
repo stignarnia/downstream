@@ -6,7 +6,7 @@ This project was originally based on [Destreamer](https://github.com/snobu/destr
 Fork powered by @sup3rgiu (https://github.com/sup3rgiu/PoliDown)  
 Further adaptation by @stignarnia
 
-**This program does not work if your school or workplace uses a custom Single Sign On like Shibboleth, in that case give a look at the links above**
+**This program does not work if your school or workplace uses a custom Single Sign On like Shibboleth, in that case give a look at the links above**  
 **It has been tested in the following schools or workplaces (feel free to add yours if you used this successfully**
 * Humanitas University
 
