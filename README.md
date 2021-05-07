@@ -26,7 +26,7 @@ If you are on Windows keep reading, otherwise google how to get the prerequisite
 * double click on the `Downstream Launcher.bat` file and enjoy
 
 ### WINDOWS TUTORIAL
-**N.B:** ffmpeg.zeranoe.com closed since Sep 18, 2020. If you are following the video tutorial, download ffmpeg from another source available on the [ffmpeg website](https://www.ffmpeg.org/download.html) (nightly build is no more required)
+**N.B:** ffmpeg.zeranoe.com closed since Sep 18, 2020. If you are following the video tutorial, download ffmpeg from another source available on the [ffmpeg website](https://www.ffmpeg.org/download.html) (nightly build is no longer required)
 
 **N.B:** This video was made for [PoliDown](https://github.com/sup3rgiu/PoliDown), ignore everything after the succesful execution of the `npm install` command
 
