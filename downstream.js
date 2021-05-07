@@ -101,8 +101,7 @@ async function downloadVideo(videoUrls, username, domain, password, outputDirect
    await page.keyboard.type(username);
    await page.click('input[type="submit"]');
 
-   var waitTill = new Date(new Date().getTime() + 5000);
-   while(waitTill > new Date()){}
+   await sleep(5000)
    await page.keyboard.type(password); // types the password
    await page.click('input[type="submit"]');
 
