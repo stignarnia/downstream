@@ -3,8 +3,7 @@
 echo Welcome to downstream, easly download Microsoft Stream videos
 echo.
 echo Project originally based on https://github.com/snobu/destreamer
-echo Fork powered by @sup3rgiu (https://github.com/sup3rgiu/PoliDown)
-echo further adaptation by @stignarnia
+echo Fork powered by @sup3rgiu (https://github.com/sup3rgiu/PoliDown), further adaptation by @stignarnia
 echo.
 
 if exist settings.bat (
