@@ -1,9 +1,9 @@
 # Downstream
-<a href="http://example.com/" target="_blank">Hello, world!</a>
+
 ## Saves Microsoft Stream videos
 
-This project was originally based on [Destreamer](https://github.com/snobu/destreamer){:target="\_blank"}  
-Fork powered by @sup3rgiu (https://github.com/sup3rgiu/PoliDown){:target="\_blank"}  
+This project was originally based on [Destreamer](https://github.com/snobu/destreamer)  
+Fork powered by @sup3rgiu (https://github.com/sup3rgiu/PoliDown)  
 Further adaptation by @stignarnia
 
 **This program does not work if your school or workplace uses a custom Single Sign On like Shibboleth, in that case give a look at the links above**
@@ -11,9 +11,9 @@ Further adaptation by @stignarnia
 ## PREREQUISITES
 If you don't know what these are just keep reading
 
-* [**Node.js**](https://nodejs.org/it/download/){:target="\_blank"}: anything above v8.0 seems to work.
-* [**aria2**](https://github.com/aria2/aria2/releases){:target="\_blank"}: this needs to be in your `$PATH` (for example, copy `aria2c.exe` to `C:\Windows`). PoliDown calls `aria2c` with a bunch of arguments in order to improve the download speed.
-* [**ffmpeg**](https://www.ffmpeg.org/download.html){:target="\_blank"}: a recent version (year 2019 or above), in [`$PATH`](https://www.thewindowsclub.com/how-to-install-ffmpeg-on-windows-10){:target="\_blank"}.
+* [**Node.js**](https://nodejs.org/it/download/): anything above v8.0 seems to work.
+* [**aria2**](https://github.com/aria2/aria2/releases): this needs to be in your `$PATH` (for example, copy `aria2c.exe` to `C:\Windows`). PoliDown calls `aria2c` with a bunch of arguments in order to improve the download speed.
+* [**ffmpeg**](https://www.ffmpeg.org/download.html): a recent version (year 2019 or above), in [`$PATH`](https://www.thewindowsclub.com/how-to-install-ffmpeg-on-windows-10).
 
 ## INSTALLATION AND USAGE
 
@@ -26,11 +26,11 @@ If you are on Windows keep reading, otherwise google how to get the prerequisite
 * double click on the `Downstream Launcher.bat` file and enjoy
 
 ### WINDOWS TUTORIAL
-**N.B:** ffmpeg.zeranoe.com closed since Sep 18, 2020. If you are following the video tutorial, download ffmpeg from another source available on the [ffmpeg website](https://www.ffmpeg.org/download.html){:target="\_blank"} (nightly build is no longer required)
+**N.B:** ffmpeg.zeranoe.com closed since Sep 18, 2020. If you are following the video tutorial, download ffmpeg from another source available on the [ffmpeg website](https://www.ffmpeg.org/download.html) (nightly build is no longer required)
 
-**N.B:** This video was made for [PoliDown](https://github.com/sup3rgiu/PoliDown){:target="\_blank"}, ignore everything after the succesful execution of the `npm install` command
+**N.B:** This video was made for [PoliDown](https://github.com/sup3rgiu/PoliDown), ignore everything after the succesful execution of the `npm install` command
 
-***[Tutorial on Youtube](https://www.youtube.com/watch?v=iZgea4t5YW4){:target="\_blank"}***
+***[Tutorial on Youtube](https://www.youtube.com/watch?v=iZgea4t5YW4)***
 
 ### COMMAND LINE USAGE
 
