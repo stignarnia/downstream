@@ -30,7 +30,7 @@ If you are on Windows keep reading, otherwise google how to get the prerequisite
 
 **N.B:** This video was made for [PoliDown](https://github.com/sup3rgiu/PoliDown), ignore everything after the succesful execution of the `npm install` command
 
-[![tutorialpreview](https://user-images.githubusercontent.com/7725068/76635345-a1cef600-6547-11ea-991b-d115946ed556.png)](https://www.youtube.com/watch?v=iZgea4t5YW4) "PoliDown Windows Installation Instructions")
+***[Tutorial on Youtube](https://www.youtube.com/watch?v=iZgea4t5YW4)***
 
 ### COMMAND LINE USAGE
 
@@ -45,7 +45,7 @@ $ node downstream.js -h
 
 Options:
   --version              Show version number                           [boolean]
-  -v, --videoUrls                                               [array]
+  -v, --videoUrls                                                 [array]
   -f, --videoUrlsFile    Path to txt file containing the URLs (one URL for each line) [string]
   -u, --username         name.surname@example.com                 [string] [required]
   -p, --password                                                  [string] [required]
