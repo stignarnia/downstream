@@ -101,24 +101,29 @@ async function downloadVideo(videoUrls, username, domain, password, outputDirect
    await page.keyboard.type(username);
    await page.click('input[type="submit"]');
 
-   await sleep(5000)
+   await sleep(5000);
    await page.keyboard.type(password); // types the password
    await page.click('input[type="submit"]');
 
    try {
      await page.waitForSelector('input[id="idBtn_Back"]', { timeout: 2000 });
-     await page.click('input[id="idBtn_Back"]'); // clicks on "No" to stay logged in
+     await page.click('input[id="idBtn_Back"]'); // don't remember me
    } catch (error) {
       // button didn't appear, ok...
    }
 
-   await browser.waitForTarget(target => target.url().includes('microsoftstream.com/'), { timeout: 90000 });
+   try {
+     await browser.waitForTarget(target => target.url().startsWith('https://web.microsoftstream.com'), { timeout: 30000 });
+   } catch {
+     term.red('Bad username and/or password');
+     process.exit(401);
+   }
    console.log('We are logged in. ');
    await sleep (3000)
    const cookie = await extractCookies(page);
    console.log('Got required authentication cookies.');
    console.log("\nAt this point Chrome's job is done, shutting it down...");
-   await browser.close(); // browser is no more required. Free up RAM!
+   await browser.close(); // browser is no longer required. Free up RAM!
     for (let videoUrl of videoUrls) {
        if (videoUrl == "") continue; // jump empty url
        term.green(`\nStart downloading video: ${videoUrl}\n`);
