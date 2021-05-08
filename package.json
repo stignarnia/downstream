@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git://github.com/stignarnia/downstream.git"
   },
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Download Microsoft Stream videos.",
   "main": "downstream.js",
   "keywords": [],
