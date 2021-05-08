@@ -38,9 +38,18 @@ If you are on Windows keep reading, otherwise skip to macOS or Linux
 ### macOS (Mojave and above, including Big Sur on M1 (arm64))
 
 * [Install Homebrew](https://www.youtube.com/watch?v=31eTw5xRHBA)
-* Give it these two commands: `brew install ffmpeg` and `brew install aria2`
+* Give it these two commands:
+```
+brew install ffmpeg
+brew install aria2
+```
 * [Install Node.js](https://www.youtube.com/watch?v=0i-gstqgjuE)
-* Staying in terminal, follow the instruction under command line usage
+* Staying in terminal:
+```
+cd /something/installationfolder/
+npm install
+```
+*  Then, always in terminal, follow the instruction under command line usage
 
 ### Linux
 
@@ -53,6 +62,9 @@ sudo apt-get install nodejs
 sudo apt-get install npm
 sudo apt-get install ffmpeg
 sudo apt-get install aria2
+sudo apt-get install libsecret-1-0
+cd /something/installationfolder/
+npm install
 ```
 Then follow command line usage
 
