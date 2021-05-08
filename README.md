@@ -23,28 +23,49 @@ If you don't know what these are just keep reading
 * Click on `code`, then `Download ZIP`
 * Extract the content in the folder you prefer, we'll call it `installationfolder`
 
-If you are on Windows keep reading, otherwise google how to get the prerequisites, then skip to command line usage
+If you are on Windows keep reading, otherwise skip to macOS or Linux
 
 * Follow the tutorial below until the succesful execution of the `npm install` command
-* double click on the `Downstream Launcher.bat` file and enjoy
+* Double click on the `Downstream Launcher.bat` file and enjoy
 
-### WINDOWS TUTORIAL
+### Windows tutorial
 **N.B:** ffmpeg.zeranoe.com closed since Sep 18, 2020. If you are following the video tutorial, download ffmpeg from another source available on the [ffmpeg website](https://www.ffmpeg.org/download.html) (nightly build is no longer required)
 
 **N.B:** This video was made for [PoliDown](https://github.com/sup3rgiu/PoliDown), ignore everything after the succesful execution of the `npm install` command
 
 ***[Tutorial on Youtube](https://www.youtube.com/watch?v=iZgea4t5YW4)***
 
+### macOS (Mojave and above, including Big Sur on M1 (arm64))
+
+* [Install Homebrew](https://www.youtube.com/watch?v=31eTw5xRHBA)
+* Give it these two commands: `brew install ffmpeg` and `brew install aria2`
+* [Install Node.js](https://www.youtube.com/watch?v=0i-gstqgjuE)
+* Staying in terminal, follow the instruction under command line usage
+
+### Linux
+
+Come on, you have Linux, you know how to do this stuff, anyway on Ubuntu (or any Debian based distro I guess), this works:
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install nodejs
+sudo apt-get install npm
+sudo apt-get install ffmpeg
+sudo apt-get install aria2
+```
+Then follow command line usage
+
 ### COMMAND LINE USAGE
 
 Default usage:
 ```
-$ node downstream.js -u USERNAME -p PASSWORD -v "https://web.microsoftstream.com/video/VIDEO-1"
+node downstream.js -u USERNAME -p PASSWORD -v "https://web.microsoftstream.com/video/VIDEO-1"
 ```
 
 Show options:
 ```
-$ node downstream.js -h
+node downstream.js -h
 
 Options:
   --version              Show version number                           [boolean]
@@ -59,7 +80,7 @@ Options:
 
 Multiple videos download:
 ```
-$ node downstream.js -u USERNAME -p PASSWORD
+node downstream.js -u USERNAME -p PASSWORD
     -v "https://web.microsoftstream.com/video/VIDEO-1"
                 "https://web.microsoftstream.com/video/VIDEO-2"
                 "https://web.microsoftstream.com/video/VIDEO-3"
@@ -67,17 +88,17 @@ $ node downstream.js -u USERNAME -p PASSWORD
 
 Download from TXT file (one link per line):
 ```
-$ node downstream.js -u USERNAME -p PASSWORD -f "/my/path/here/links.txt"
+node downstream.js -u USERNAME -p PASSWORD -f "/my/path/here/links.txt"
 ```
 
 Define default video quality [0-5] (to avoid manual prompt for each video):
 ```
-$ node downstream.js -u USERNAME -p PASSWORD -v "https://web.microsoftstream.com/video/VIDEO-1" -q 4
+node downstream.js -u USERNAME -p PASSWORD -v "https://web.microsoftstream.com/video/VIDEO-1" -q 4
 ```
 
 Output directory (relative or absoulte path):
 ```
-$ node downstream.js -u USERNAME -p PASSWORD -v "https://web.microsoftstream.com/video/VIDEO-1" -o "/my/path/here"
+node downstream.js -u USERNAME -p PASSWORD -v "https://web.microsoftstream.com/video/VIDEO-1" -o "/my/path/here"
 ```
 
 ## EXPECTED OUTPUT
