@@ -26,7 +26,7 @@ set /p output_folder_path=
 echo set output_folder_path=%output_folder_path%>>settings.bat
 echo set the quality of the downloaded videos [0-5], otherwise you will be asked every time
 set /p quality_number=
-echo set quality_number=%quality_number%>>settings.bat
+>>"settings.bat" echo(set quality_number=%quality_number%
 
 :BEGIN
 echo To repeat the setup just delete the settings.bat file in the installation folder, or manually change the settings in there
