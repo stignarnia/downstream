@@ -16,6 +16,6 @@
     "puppeteer": "^10.1.0",
     "request": "^2.88.2",
     "terminal-kit": "^2.4.0",
-    "yargs": "^17.0.1"
+    "yargs": "^17.4.0"
   }
 }
