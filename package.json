@@ -13,7 +13,7 @@
   "dependencies": {
     "m3u8-parser": "^4.7.0",
     "node-notifier": "^10.0.1",
-    "puppeteer": "^10.1.0",
+    "puppeteer": "^13.5.1",
     "request": "^2.88.2",
     "terminal-kit": "^2.4.0",
     "yargs": "^17.4.0"
