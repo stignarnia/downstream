@@ -1,4 +1,6 @@
-# Downstream
+# Downstream (Deprecated)
+
+Both my university and my friend's for whom I did this modification have moved on from using this system, thus I have no way of testing that this still works and in fact it probably doesn't. Obviously this also means it won't be maintained and will be put in the public archive.
 
 ## Saves Microsoft Stream videos
 
